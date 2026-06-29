@@ -41,10 +41,10 @@ try:
         EC.presence_of_element_located((By.CLASS_NAME, "session-success-alert")) 
     )
     
-    print("✅ REGRESSION TEST PASSED: Fungsionalitas pembuatan order tidak terpengaruh oleh penambahan fitur logistik baru.")
+    print(" REGRESSION TEST PASSED: Fungsionalitas pembuatan order tidak terpengaruh oleh penambahan fitur logistik baru.")
 
 except Exception as e:
-    print(f"❌ REGRESSION TEST FAILED: Terdapat masalah pada UI/API lama. Error: {e}")
+    print(f" REGRESSION TEST FAILED: Terdapat masalah pada UI/API lama. Error: {e}")
 
 finally:
     time.sleep(3)
