@@ -38,7 +38,7 @@ try:
     driver.find_element(By.XPATH, "//button[contains(text(), 'Ajukan Pesanan')]").click()
 
     success_message = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.CLASS_NAME, "session-success-alert")) # Sesuaikan dgn class Tailwind-mu
+        EC.presence_of_element_located((By.CLASS_NAME, "session-success-alert")) 
     )
     
     print("✅ REGRESSION TEST PASSED: Fungsionalitas pembuatan order tidak terpengaruh oleh penambahan fitur logistik baru.")
